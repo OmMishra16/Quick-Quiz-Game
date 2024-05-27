@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <container>
+        <div class="scoreOfQuestion">
+            <div class="tagOfQuestiong">
+                <div>
+                    <p class="textOfQuestion">Question</p>
+                    <progress id="progressBar" value="0" max="3"></progress>
+                </div>
+                <p class="valueOfNumber">0/3</p>
+            </div>
+            <div class="tagOfScore">
+                <div class="textOfScore">Score</div>
+                <h1 class="valueOfScore">0</h1>
+            </div>
+        </div>
+        <div class="question">
+            <h1 id="textOfQuestion">What is the answer to this Question?</h1>
+            <div>
+                <div class="option"  id="option1">
+                    <span class="insideBox">A</span>
+                    <span id="testOfOption1">Choice 1</span>
+                </div>
+                <div class="option" id="option2">
+                    <span class="insideBox">B</span>
+                    <span id="testOfOption2">Choice 2</span>
+                </div>
+                <div class="option" id="option3">
+                    <span class="insideBox">C</span>
+                    <span id="testOfOption3">Choice 3</span>
+                </div>
+                <div class="option" id="option4">
+                    <span class="insideBox">D</span>
+                    <span id="testOfOption4">Choice 4</span>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+        <div id="lastSc" class="hidden">
+            <h2>Your Score: <span id="fScore"></span></h2>
+            <button id="playAgain">Play Again</button>
+            <button id="goHome">Go Home</button>
+        </div>
+    </container>
+    
+</body>
+
+</html>

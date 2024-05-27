@@ -1,0 +1,185 @@
+.container {
+    text-align: center;
+    background: #ebf4fe;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #56a4e9;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container .btn {
+    display: block;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    color: #56a4e9;
+    text-decoration: none;
+    border: 1px solid #56a4e9;
+    border-radius: 0;
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container .btn:hover {
+    background-color: #cae0f7;
+}
+
+.Q1 {
+    text-align: center; 
+    font-size: 0.9em; 
+    width: 50%; 
+    margin: 0 auto; 
+}
+.option {
+    
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: box-shadow 0.3s;
+}
+
+.option:hover {
+    
+    border-color: #56a4e9;
+    box-shadow: 0 0 10px #56a4e9;
+    
+}
+
+
+
+.option {
+    width: 500px;
+    
+}
+.option .insideBox {
+    
+    background-color: #cae0f7;
+    padding: 10px;
+    margin-right: 10px;
+}
+.correct {
+    background-color: green;
+    
+}
+
+.incorrect {
+    background-color: red;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+.scoreOfQuestion {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#textOfQuestion {
+    color: black !important;
+    width: 500px;
+}
+
+.tagOfQuestion{
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: row;
+}
+
+#playAgain,
+#goHome {
+   
+    padding: 5px !important;
+    height: 50px !important;
+    font-size: 15px !important;
+    width: 125px !important;
+}
+
+
+#lastSc button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-color: #56a4e9;
+    background-color: white; 
+    color: #56a4e9; 
+
+}
+#lastSc.hidden {
+    display: none;
+}
+
+
+body {
+    
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    background-color: #ebf4fe;
+    font-family: Arial, sans-serif;
+    
+}
+
+#progressBar {
+    margin-top: 5px;
+    width: 140%; 
+    height: 20px;
+    border: 2px solid#56a4e9; 
+    border-radius: 0; 
+}
+
+#progress-bar::-webkit-progress-bar {
+    background-color: #f3f3f3; 
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #56a4e9; 
+}
+
+#progress-bar::-moz-progress-bar {
+    background-color: #56a4e9; 
+}
+
+#lastSc h2 {
+    margin-bottom: 20px;
+    color: #56a4e9;
+}
+
+
+#lastSc {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cae0f7; 
+    z-index: 1000; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
